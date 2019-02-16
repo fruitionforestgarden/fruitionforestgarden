@@ -114,6 +114,9 @@ figcaption p {
     border-radius: 11px;
     
 }
+.paco:hover {
+    background: var(--light-accent);
+}
 .fa-heart {
     color: rgb(160, 20, 20);
 }
