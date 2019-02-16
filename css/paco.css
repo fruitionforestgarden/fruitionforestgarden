@@ -39,6 +39,12 @@ hr {
 .logo {
     text-align: left;
 }
+.shade {
+    -webkit-box-shadow: .5px .5px 2px 0px rgb(105, 105, 105);
+    -moz-box-shadow: .5px .5px 2px 0px rgb(105, 105, 105);
+    box-shadow: .5px .5px 2px 0px rgb(105, 105, 105);
+}
+
 .fa-heart {
     color: rgb(160, 20, 20);
 }
