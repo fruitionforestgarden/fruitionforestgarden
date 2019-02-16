@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-88770321-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-88770321-1');
+</script>
+    <meta property="og:url" content="https://www.fruitionforestgarden.com/paco.html" />
+    <meta property="og:title" content="Paco Diehl-Citoli" />
+    <meta property="og:description" content="July 17, 2007 - February 14, 2019 " />
+    <meta property="og:image" content="https://www.fruitionforestgarden.com/img/paco/paco10.jpg" />
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/paco.css">
+    <link rel="shortcut icon" href="img/icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/icons/favicon.ico" type="image/x-icon">
+    <title>Fruition Forest Garden</title>
+</head>
+
+<body>
+    <div class="logo">
+    <a href="index.html">
+      <img src="img/icons/favicon-32x32.png" alt="">
+    </a>
+  </div>
+  <div class="title">
+    <h1>Paco Diehl-Citoli</h1>
+    <hr>
+    <h3><i class="far fa-heart"></i><i class="far fa-heart"></i> July 17, 2007 - February 14, 2019 <i class="far fa-heart"></i><i class="far fa-heart"></i></h3>
+  </div>
+    <div class="overlay">
+        <div class="overlay-inner">
+            <button class="close"><i class="far fa-window-close"></i></button>
+            <img>
+        </div>
+    </div>
+    <section class="gallery">
+    </section>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <script>
+    const gallery = document.querySelector('.gallery');
+    const overlay = document.querySelector('.overlay');
+    const overlayImage = overlay.querySelector('img');
+    const overlayClose = overlay.querySelector('.close');
+    function generateHTML([h, v]) {
+      return `
+        <div class="item h${h} v${v}">
+          <img src="img/paco/paco${randomNumber(29)}.jpg">
+          <div class="item__overlay">
+            <button>View →</button>
+          </div>
+        </div>
+      `;
+    }
+    function randomNumber(limit) {
+      return Math.floor(Math.random() * limit) + 1;
+    }
+    function handleClick(e) {
+      const src = e.currentTarget.querySelector('img').src;
+      overlayImage.src = src;
+      overlay.classList.add('open');
+    }
+    function close() {
+      overlay.classList.remove('open');
+    }
+    const digits = Array.from({ length: 50 }, () => [randomNumber(4), randomNumber(4)]).concat([[1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1]])
+    const html = digits.map(generateHTML).join('');
+    gallery.innerHTML = html;
+    const items = document.querySelectorAll('.item');
+    items.forEach(item => item.addEventListener('click', handleClick));
+    overlayClose.addEventListener('click', close);
+</script>
+</body>
+
+</html>
