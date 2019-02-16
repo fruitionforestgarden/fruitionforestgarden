@@ -109,7 +109,14 @@ figcaption p {
 .section h4 {
     font-size: 1.6rem;
 }
-
+.paco {
+    background: rgb(7, 205, 255);
+    border-radius: 11px;
+    
+}
+.fa-heart {
+    color: rgb(160, 20, 20);
+}
 .forest {
     display: grid;
     grid-gap: 20px;
