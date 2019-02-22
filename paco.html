@@ -28,7 +28,7 @@
 </head>
 
 <body>
-    <div class="logo">
+    <div id="navbar">
     <a href="index.html">
       <img src="img/icons/favicon-32x32.png" alt="">
     </a>
@@ -81,12 +81,31 @@
     function close() {
       overlay.classList.remove('open');
     }
-    const digits = Array.from({ length: 50 }, () => [randomNumber(4), randomNumber(4)]).concat([[1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1]])
+    const digits = Array.from({ length: 90 }, () => [randomNumber(4), randomNumber(4)]).concat([[1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1]])
     const html = digits.map(generateHTML).join('');
     gallery.innerHTML = html;
     const items = document.querySelectorAll('.item');
     items.forEach(item => item.addEventListener('click', handleClick));
     overlayClose.addEventListener('click', close);
+</script>
+<script>
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+} 
 </script>
 </body>
 

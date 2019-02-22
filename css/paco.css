@@ -30,14 +30,27 @@ hr {
     width: 30%;
     color: var(--dark-accent);
 }
+#navbar {
+    text-align: left;
+}
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }  
 .title {
     background: rgb(7, 205, 255);
     margin-bottom: 30px;
     border-radius: 11px;
     padding: 11px;
-}
-.logo {
-    text-align: left;
 }
 .shade {
     -webkit-box-shadow: .5px .5px 2px 0px rgb(105, 105, 105);
