@@ -63,7 +63,7 @@
     function generateHTML([h, v]) {
       return `
         <div class="item h${h} v${v}">
-          <img src="img/paco/paco${randomNumber(190)}.jpg">
+          <img src="img/paco/paco${randomNumber(193)}.jpg">
           <div class="item__overlay">
             <button>View →</button>
           </div>
@@ -81,7 +81,7 @@
     function close() {
       overlay.classList.remove('open');
     }
-    const digits = Array.from({ length: 193 }, () => [randomNumber(4), randomNumber(4)]).concat([[1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1]])
+    const digits = Array.from({ length: 90 }, () => [randomNumber(4), randomNumber(4)]).concat([[1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1]])
     const html = digits.map(generateHTML).join('');
     gallery.innerHTML = html;
     const items = document.querySelectorAll('.item');
