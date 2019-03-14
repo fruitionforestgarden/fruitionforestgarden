@@ -45,7 +45,7 @@
   </div>
     <div class="overlay">
         <div class="overlay-inner">
-            <button class="close"><i class="far fa-window-close"></i></button>
+            <button class="close"><i class="far fa-window-close"> Close</i></button>
             <img>
         </div>
         
@@ -81,7 +81,7 @@
     function close() {
       overlay.classList.remove('open');
     }
-    const digits = Array.from({ length: 90 }, () => [randomNumber(4), randomNumber(4)]).concat([[1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1]])
+    const digits = Array.from({ length: 90 }, () => [randomNumber(4), randomNumber(4)]).concat([[1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1], [1, 1]])
     const html = digits.map(generateHTML).join('');
     gallery.innerHTML = html;
     const items = document.querySelectorAll('.item');
