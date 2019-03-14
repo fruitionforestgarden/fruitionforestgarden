@@ -16,7 +16,6 @@ body {
     padding: 11px 33px 11px 33px;
     font-family: 'Fanwood Text', sans-serif;
     background: linear-gradient(to right,var(--dark-shade), var(--dark-accent));
-    text-align: center;
 }
 h1,h2,h3,h4,h5,h6 {
     margin: 0 0 5px 0;
@@ -51,6 +50,7 @@ hr {
     margin-bottom: 30px;
     border-radius: 11px;
     padding: 11px;
+    text-align: center;
 }
 .shade {
     -webkit-box-shadow: .5px .5px 2px 0px rgb(105, 105, 105);
