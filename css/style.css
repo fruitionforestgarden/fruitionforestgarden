@@ -46,7 +46,6 @@ h4 {
 
 #showcase .container {
     margin-top: 25vh;
-    backdrop-filter: blur(2px);
     max-width: 50%;
     color: var(--light-shade);
     border-radius: 6px;
