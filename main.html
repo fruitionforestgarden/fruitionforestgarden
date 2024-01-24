@@ -1,51 +1,119 @@
+<!--
+Build a blog website for our farm that focuses on pictures and our embedded videos from youTube -->    
+
+
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <<!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-60KFB51J1L"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-60KFB51J1L"></script>
+      <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+  
+          gtag('config', 'G-60KFB51J1L');
+      </script>
+    <title>Fruition Forest Garden - Cultivating Resilience</title>
+    <link rel="icon" type="image/png" href="Resources/favicon_io/favicon-16x16.png">
+    <meta name="description" content="Fruition Forest Garden: A unique exploration of 'owning the stack' in homesteading, from software solutions like ESP32/Home Assistant to permaculture projects. Join our journey from tech to nature.">
+    <meta name="keywords" content="homesteading, permaculture, sustainable living, ESP32, Home Assistant, DIY tech, soil management, self-sufficient living, permaculture principles, technology in horticulture">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Fruition Forest Garden: Merging Technology with Permaculture">
+    <meta property="og:description" content="Delve into the world of Fruition Forest Garden where simple tech meets regenerative horticulture. Discover our ESP32/Home Assistant projects and our commitment to permaculture principles.">
+    <meta property="og:image" content="URL_to_image_highlighting_your_projects_ideally_1200x630_pixels">
+    <meta property="og:url" content="http://www.fruitionforestgarden.com">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
-        gtag('config', 'G-60KFB51J1L');
-    </script>
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/icons/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="img/icons/favicon.ico" type="image/x-icon">
-    <title>Fruition Forest Garden</title>
 </head>
-
 <body>
-
-    <!-- Showcase -->
-    <div id="showcase">
-        <header>
-
-        </header>
-        <div class="section-main container">
-            <img src="img/FFGnewLogo.svg" alt="Blueberries and the Upper Peninsula">
-            <h1>FRUITION FOREST GARDEN</h1>
-           
-        </div>
+    <header>
+        <nav>
+            <img src="Resources/Logos/FFGBasic.png" alt="Logo" class="logo">
+       <!--     <a href="#" class="hamburger">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul class="nav-links">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="inspiration.html">Our Inspiration</a></li>
+            </ul> -->
+        </nav>
+    </header>    
+    <h1>Fruition Forest Garden</h1>
+    <h2>Posts</h2>
+    <div class="container">
+    <div class="card">
+        <a href="blog/post240107/post240107.html">
+            <img class="card-img" src="blog/post240107/240107.JPG" alt="Arial photo of our camp. Three buildings and snow on the ground"></a>
+            <div class="card-content">
+                <div class="card-date">January 7, 2024</div>
+                <h3 class="card-title">Two Years From Northwest to North Woods</h3>
+                <p class="card-text">We closed the door of our Oregon home and opened up a life under the stars...</p>
+            </div>
+        
     </div>
-    <!-- Footer -->
+    <!--
+    <div class="card">
+        <a href="blog/post2.html">
+            <img class="card-img" src="Resources/pics/DJI_0668th.JPG" alt="Post 2 thumbnail">
+            <div class="card-content">
+                <h3 class="card-title">Post 2</h3>
+                <p class="card-text">This is a preview of the second post...</p>
+            </div>
+        </a>
+    </div>
+    <div class="card">
+        <a href="blog/post3.html">
+            <img class="card-img" src="Resources/pics/DJI_0914th.JPG" alt="Post 3 thumbnail">
+            <div class="card-content">
+                <h3 class="card-title">Post 3</h3>
+                <p class="card-text">This is a preview of the third post...</p>
+            </div>
+        </a>
+    </div>
+    <div class="card">
+        <a href="blog/post4.html">
+            <img class="card-img" src="Resources/pics/IMG_0595th.jpeg" alt="Post 4 thumbnail">
+            <div class="card-content">
+                <h3 class="card-title">Post 4</h3>
+                <p class="card-text">This is a preview of the fourth post...</p>
+            </div>
+        </a>
+    </div>
+    <div class="card">
+        <a href="blog/post5.html">
+            <img class="card-img" src="Resources/pics/IMG_0668th.jpeg" alt="Post 5 thumbnail">
+            <div class="card-content">
+                <h3 class="card-title">Post 5</h3>
+                <p class="card-text">This is a preview of the fifth post...</p>
+            </div>
+        </a>
+    </div>
+    <div class="card">
+        <a href="blog/post6.html">
+            <img class="card-img" src="Resources/pics/IMG_6849th.JPG" alt="Post 6 thumbnail">
+            <div class="card-content">
+                <h3 class="card-title">Post 6</h3>
+                <p class="card-text">This is a preview of the sixth post...</p>
+            </div>
+        </a>
+    </div> -->
+    </div>
     <footer>
-        <div class="container">
-            <p>&copy; 2023 All rights reserved</p>
-        </div>
+        <p>Contact me at: <a href="mailto:fruitionforestgarden@gmail.com">fruitionforestgarden@gmail.com</a></p>
+        <p>
+            <a href="https://www.facebook.com/profile.php?id=100078466632791" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://github.com/fruitionforestgarden" target="_blank"><i class="fab fa-github-square"></i></a>
+            <a href="https://www.youtube.com/channel/UCayX_heX1zo_hwX_Dm_o7eg" target="_blank"><i class="fab fa-youtube-square"></i></a>
+        </p>
     </footer>
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-        crossorigin="anonymous">
-    <script src="js/main.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>

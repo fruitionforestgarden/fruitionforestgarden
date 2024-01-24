@@ -1,0 +1,284 @@
+/* styles.css */
+
+/* 
+
+#4b4e91
+#602fa6
+#2f70a6
+#74b375
+
+*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F0F8FF;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #000000;
+    text-align: center; 
+}
+
+a {
+    color: #602fa6; /* Purple */
+}
+
+a:hover {
+    color: #2f70a6; /* Medium blue */
+}
+
+button {
+    background-color: #59b155; /* Green */
+    color: #fff;
+}
+
+button:hover {
+    background-color: rgba(89, 177, 85, 0.5); /* Greyed out version of #59b155 */
+}
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: #0099cc;
+}
+/* Nav bar */
+nav {
+    background-image: url('../../Resources/pics/IMG_7124.JPG');
+    color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: rgb(126, 125, 125);
+}
+
+.logo {
+    height: 125px; /* or whatever size you want */
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .nav-links {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+}
+
+/* Post thumbnails on main page */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    border: 1px solid #353535;
+    border-radius: 5px;
+    width: 100%;
+    margin: 20px;
+    background-color: #f9fbe0;
+}
+
+@media (min-width: 600px) {
+    .card {
+        width: calc(50% - 20px);
+        margin: 10px;
+    }
+}
+
+@media (min-width: 900px) {
+    .card {
+        width: calc(33.33% - 20px);
+    }
+}
+
+.card-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-date {
+    font-size: 0.9em; /* Smaller than the title, but larger than the text */
+    color: #353535; /* Same color as the text */
+    margin-bottom: 10px; /* Add some space below the date */
+}
+
+.card-title {
+    font-size: 1.5em;
+}
+
+.card-text {
+    color: #353535;
+    font-size: 1em;
+}
+/* Title */
+
+.title {
+    text-align: center; /* Center the text */
+    padding: 15px; /* Add some padding */
+    font-family: Arial, sans-serif; /* Use a nice, readable font */
+    color: #333; /* Dark gray color for the text */
+    margin-bottom: 15px; /* Add some space below the title */
+}
+
+.title p {
+    font-size: 1.3em; /* Adjust as needed */
+}
+
+/* Slideshow */
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 60%;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+  .mySlides img {
+    border: 1px solid #4b4e91; /* Change the color as needed */
+    -webkit-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75); /* Add a shadow effect */
+    border-radius: 10px; /* Add rounded corners */
+}
+  
+  /* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 36px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: -70px; /* Adjust this value as needed */
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: -90px; /* Adjust this value as needed */
+    border-radius: 0 3px 3px 0;
+}
+  
+  /* Caption text */
+  .text {
+    color: #000;
+    background-color: #f9faea;
+    font-size: 22px;
+    position: relative;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+    -webkit-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75); /* Add a shadow effect */
+    border-radius: 10px; /* Add rounded corners */
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 18px;
+    padding: 10px 22px;
+    margin: 10px;
+    position: absolute;
+    top: 0;
+    -webkit-text-shadow:  -1px 0 rgba(0, 0, 0, 0.3), 0 1px rgba(0, 0, 0, 0.3), 1px 0 rgba(0, 0, 0, 0.3), 0 -1px rgba(0, 0, 0, 0.3); 
+    text-shadow: -1px 0 rgba(0, 0, 0, 0.3), 0 1px rgba(0, 0, 0, 0.3), 1px 0 rgba(0, 0, 0, 0.3), 0 -1px rgba(0, 0, 0, 0.3); /* Semi-transparent black shadow */
+    background: rgba(0, 0, 0, 0.3); /* Semi-transparent black overlay */
+} 
+
+  
+  .active {
+    background-color: #717171;
+  }
+
+/* Footer */
+
+footer {
+    background-color: #333; 
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.2em; 
+}
+
+@media (min-width: 600px) {
+    footer p {
+        font-size: 1.6em;
+    }
+}
+
+footer a {
+    color: #fff;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
