@@ -1,16 +1,15 @@
 /* styles.css */
 
 /* 
-
-#4b4e91
+#2e3191
 #602fa6
 #2f70a6
-#74b375
+#59b155
 
 */
 body {
     font-family: Arial, sans-serif;
-    background-color: #F0F8FF;
+    background-color: #2f70a66a;
     color: #333;
     margin: 0;
     padding: 0;
@@ -55,7 +54,7 @@ ul li a:hover {
 }
 /* Nav bar */
 nav {
-    background-image: url('../../Resources/pics/IMG_7124.JPG');
+    background-image: url('../../Resources/pics/231028banner.JPG');
     color: #333;
     padding: 10px;
     display: flex;
@@ -86,7 +85,7 @@ nav ul li a:hover {
 }
 
 .logo {
-    height: 125px; /* or whatever size you want */
+    height: 100px; /* or whatever size you want */
 }
 
 .nav-links {
@@ -227,6 +226,7 @@ nav ul li a:hover {
   .text {
     color: #000;
     background-color: #f9faea;
+    padding: 11px;
     font-size: 22px;
     position: relative;
     top: 10px;
@@ -263,6 +263,9 @@ footer {
     padding: 20px;
     text-align: center;
 }
+.footer-icons {
+    font-size: 3em;
+}
 
 footer p {
     font-size: 1.2em; 
@@ -281,4 +284,8 @@ footer a {
 
 footer a:hover {
     color: rgba(255, 255, 255, 0.7);
+}
+footer .copy {
+    font-size: 0.8em;
+    margin-top: 40px;
 }
