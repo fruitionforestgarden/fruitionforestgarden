@@ -231,12 +231,13 @@ nav ul li a:hover {
     padding: 11px;
     font-size: 22px;
     position: relative;
-    top: 10px;
-    width: 100%;
+    top: 11px;
+    width: 95%;
     text-align: center;
-    -webkit-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
-    box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75); /* Add a shadow effect */
-    border-radius: 10px; /* Add rounded corners */
+    -webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.6);
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.6); /* Add a shadow effect */
+    border-radius: 11px; /* Add rounded corners */
+    right: -11px; /* Adjust this value as needed */
   }
   
   /* Number text (1/3 etc) */
