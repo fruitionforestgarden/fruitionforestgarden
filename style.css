@@ -1,10 +1,10 @@
 /* styles.css */
 
 /* 
-#2e3191
-#602fa6
-#2f70a6
-#59b155
+#2e3191 Dark Blue
+#602fa6 Purple
+#2f70a6 Slate Blue
+#59b155 Green
 
 */
 body {
@@ -214,12 +214,14 @@ nav ul li a:hover {
 
 .prev {
     left: -70px; /* Adjust this value as needed */
-    border-radius: 3px 0 0 3px;
+    color: #59b155;
+    text-shadow: -2px 0 1px rgba(0, 0, 0, 0.9), 0 2px 1px rgba(0, 0, 0, 0.9), 2px 0 1px rgba(0, 0, 0, 0.9), 0 -2px 1px rgba(0, 0, 0, 0.9); /* Semi-transparent black shadow */
 }
 
 .next {
     right: -90px; /* Adjust this value as needed */
-    border-radius: 0 3px 3px 0;
+    color: #59b155;
+    text-shadow: -2px 0 1px rgba(0, 0, 0, 0.9), 0 2px 1px rgba(0, 0, 0, 0.9), 2px 0 1px rgba(0, 0, 0, 0.9), 0 -2px 1px rgba(0, 0, 0, 0.9); /* Semi-transparent black shadow */
 }
   
   /* Caption text */
